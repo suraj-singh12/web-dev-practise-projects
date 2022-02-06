@@ -1,0 +1,81 @@
+:root {
+    background-color: pink;
+    line-height: 0.89em;
+}
+
+
+/* to all divs (i.e. terminal window, and all 3 buttons */
+
+div {
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    color: blue;
+}
+
+#terminal-window {
+    margin-top: 7em;
+    height: 32em;
+    width: 60%;
+    padding: 1em;
+    padding-top: 1em;
+    /* border-radius: 4px 4px 4px 4px; */
+    border-radius: 0.43em;
+    /* box-shadow: 2px 2px 1.8px 2px black; */
+    box-shadow: 12px 12px 2px 1px rgba(143, 84, 84, 0.507);
+    transition: all 0.45s;
+}
+
+#terminal-window:hover {
+    transform: scale(1.08);
+}
+
+
+/* designing buttons */
+
+#terminal-window div {
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+#red {
+    background-color: red;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
+
+
+/* all comments to have grey text */
+
+p[class="comment"] {
+    color: grey;
+}
+
+
+/* will be displayed by the side of 3 buttons */
+
+#name {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    border: 1px solid grey;
+}
+
+#end {
+    position: absolute;
+    bottom: 1%;
+    right: 4%;
+    font-size: larger;
+    color: rgb(3, 70, 3)
+}

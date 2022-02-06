@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal</title>
+    <link rel="stylesheet" href="terminal-css.css">
+</head>
+
+<body>
+    <div id="terminal-window">
+        <!-- top left corner buttons -->
+        <div id="red"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+        <p id="name" class="comment">&nbsp;&nbsp;suraj@Nitro5 [terminal-session: 1/1]</p>
+        <hr>
+
+        <!-- content -->
+        <!-- line by the side of buttons (in top label) -->
+        <p class="comment">suraj@Nitro5:~$ cat function-prototype</p>
+
+        <!-- body of terminal -->
+        <p class="comment">Function prototypes are declared in this way :-</p>
+
+        <code>
+            void myFunction(int);
+        </code>
+
+        <p class="comment">Here's a program: </p>
+        <pre>
+            #include &lt;iostream&gt;
+            using namespace std;
+
+            bool isPrime(int n);    //function prototype
+            int main()
+            {
+                int number = 5;
+                bool ans = isPrime(5);
+                if(ans == true)
+                    cout << "Yes! " << number << " is a prime number";
+                else 
+                    cout << "No! " << number << " is not a prime number";
+            }
+        </pre>
+
+        <p class="comment">In the above program</p>
+        <code><pre> bool isPrime(int n);</pre></code>
+        <p class="comment"> is a function prototype.</p>
+
+        <p class="comment">suraj@Nitro5:~$ </p>
+
+        <p id="end">Designed by: Suraj Singh</p>
+    </div>
+    <br>
+</body>
+
+</html>
